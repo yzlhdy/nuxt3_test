@@ -1580,6 +1580,15 @@
     local-pkg "^0.4.3"
     vee-validate "^4.10.7"
 
+"@vee-validate/yup@^4.10.7":
+  version "4.10.7"
+  resolved "https://registry.npmmirror.com/@vee-validate/yup/-/yup-4.10.7.tgz#5f22ff80771217dd2a772ab514189115be0ae469"
+  integrity sha512-hAbiXr8/3FRbuMso1rw2PR2BWAXkls0s0v2URksKBaB5xrk/RKvcQdxeGxWHBaiOCmwu1x1OmAYOpm8s0rycsQ==
+  dependencies:
+    type-fest "^3.13.0"
+    vee-validate "^4.10.7"
+    yup "^1.2.0"
+
 "@vercel/nft@^0.22.6":
   version "0.22.6"
   resolved "https://registry.npmmirror.com/@vercel/nft/-/nft-0.22.6.tgz#edb30d300bb809c0945ea4c7b87e56f634885541"
