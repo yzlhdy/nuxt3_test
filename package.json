@@ -19,6 +19,9 @@
   "dependencies": {
     "@nuxt/image": "^1.0.0-rc.1",
     "@nuxtjs/color-mode": "^3.3.0",
-    "nuxt-icon": "^0.4.2"
+    "@nuxtjs/i18n": "^8.0.0-beta.13",
+    "@vee-validate/nuxt": "^4.10.7",
+    "nuxt-icon": "^0.4.2",
+    "yup": "^1.2.0"
   }
 }

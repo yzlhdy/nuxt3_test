@@ -2,21 +2,14 @@
     <div>
         <h1>Hello About</h1>
         <NuxtLink to="/">Home page</NuxtLink>
-        <NButton class="uppercase font-bold font-medium" @click="handleMessage" type="primary"
-            :theme-overrides="buttonThemeOverrides">
+        <NButton class="uppercase font-bold font-medium" @click="handleMessage" type="primary">
             Button
         </NButton>
     </div>
 </template>
 <script lang="ts" setup>
 import { NButton, ButtonProps } from 'naive-ui'
-type ButtonThemeOverrides = NonNullable<ButtonProps['themeOverrides']>
-const buttonThemeOverrides: ButtonThemeOverrides = {
-    textColor: 'rgba(24, 127, 231, 1)',
-    colorPrimary: 'red',
-    colorHoverPrimary: "red",
-    colorFocus: 'red',
-}
+
 useHead({
     title: 'My App',
     meta: [

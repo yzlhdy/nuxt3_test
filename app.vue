@@ -11,14 +11,14 @@ import { zhCN, dateZhCN, NConfigProvider, GlobalThemeOverrides } from "naive-ui"
 
 const themeOverrides: GlobalThemeOverrides = {
     common: {
-        primaryColor: "#FC8952",
-        primaryColorHover: "#FC8952",
-        primaryColorPressed: "#FC8952",
-        primaryColorSuppl: "#FC8952",
+        primaryColor: "#113c82",
+        primaryColorHover: "#113c82",
+        primaryColorPressed: "#113c82",
+        primaryColorSuppl: "#113c82",
     },
     Button: {
-        textColor: "#FC8952",
-        border: "1px solid #FF763B",
+        textColor: "#113c82",
+        border: "1px solid #113c82",
     },
 };
 
