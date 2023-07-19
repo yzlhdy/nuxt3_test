@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{ $t('title') }}</h1>
+        <h1 class="title">{{ $t('title') }}</h1>
         <NuxtLink to="/about">About page</NuxtLink>
         <NuxtLink to="/form">Vee Form</NuxtLink>
         <Icon name="ph:activity-bold" />
@@ -19,6 +19,22 @@
 const resultData = ref<any[]>([])
 const res = await useFetch('https://fakestoreapi.com/products')
 resultData.value = res.data.value as any
+
+const { $gsap: gsap } = useNuxtApp()
+
+onMounted(() => {
+    gsap.from('.title', {
+        y: 100,
+        duration: 0.2,
+        opacity: 0,
+        repeat: -1,
+        yoyo: true
+    })
+})
+
+
+
+
 
 
 </script>
