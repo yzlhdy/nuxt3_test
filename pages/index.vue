@@ -21,14 +21,18 @@ const res = await useFetch('https://fakestoreapi.com/products')
 resultData.value = res.data.value as any
 
 const { $gsap: gsap } = useNuxtApp()
-
 onMounted(() => {
+    const mm = gsap.matchMedia()
     gsap.from('.title', {
-        y: 100,
+        yPercent: 100,
         duration: 0.2,
         opacity: 0,
-        repeat: -1,
-        yoyo: true
+    })
+    mm.add('(max-width:500px)', () => {
+        gsap.from('.title', {
+            rotate: 360,
+            duration: 2
+        })
     })
 })
 
